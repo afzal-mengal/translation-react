@@ -79,7 +79,7 @@ function Transcription({ transcription, setTranscription }) {
 
       <TextField
         variant="outlined"
-        label="Speech Translation"
+        label="Speech Transcription"
         multiline
         rows={4}
         fullWidth

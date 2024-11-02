@@ -80,12 +80,12 @@ function Translation({ transcription }) {
 
       <TextField
         variant="outlined"
-        label="Speech Transcription"
+        label="Speech Translation"
         multiline
         rows={4}
         fullWidth
         value={translation}
-        placeholder="Your speech transcription will appear here"
+        placeholder="Your speech translation will appear here"
         inputProps={{
           readOnly: true,
         }}
