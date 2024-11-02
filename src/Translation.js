@@ -30,6 +30,7 @@ function Translation({ transcription }) {
   }, [transcription, language]);
 
   const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+  console.log(apiKey);
 
   const translateText = async (text, targetLang) => {
     const prompt = `Translate the following text to ${targetLang} while maintaining the accuracy of medical terms ,only output the translation nothing else: ${text}`;
