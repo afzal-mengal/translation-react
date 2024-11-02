@@ -20,7 +20,6 @@ function Translation({ transcription }) {
 
     // Speak the utterance with all default parameters
     speechSynthesisRef.current.speak(utterance);
-    console.log("speack");
   };
 
   useEffect(() => {
@@ -30,7 +29,6 @@ function Translation({ transcription }) {
   }, [transcription, language]);
 
   const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
-  console.log(apiKey);
 
   const translateText = async (text, targetLang) => {
     const prompt = `Translate the following text to ${targetLang} while maintaining the accuracy of medical terms ,only output the translation nothing else: ${text}`;
