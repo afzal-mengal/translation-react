@@ -9,7 +9,6 @@ function Translation({ transcription }) {
 
   const handleSpeak = () => {
     // Cancel any ongoing speech
-
     if (speechSynthesisRef.current.speaking) {
       speechSynthesisRef.current.cancel();
     }
